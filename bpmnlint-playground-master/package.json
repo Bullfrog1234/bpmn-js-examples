@@ -1,0 +1,31 @@
+{
+  "name": "bpmnlint-playground",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A bpmnlint playground",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --content-base ./public --open-page index.html?linting=1",
+    "lint": "bpmnlint diagrams/*",
+    "start": "npm run dev"
+  },
+  "author": {
+    "name": "Nico Rehwaldt",
+    "url": "https://github.com/nikku"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "bpmn-js": "^5.0.4",
+    "bpmn-js-bpmnlint": "^0.13.0",
+    "bpmnlint": "^6.2.0",
+    "bpmnlint-loader": "^0.1.4",
+    "bpmnlint-plugin-playground": "file:./plugin",
+    "copy-webpack-plugin": "^5.0.3",
+    "downloadjs": "^1.4.7",
+    "file-drops": "^0.3.0",
+    "raw-loader": "^1.0.0",
+    "webpack": "^4.37.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
